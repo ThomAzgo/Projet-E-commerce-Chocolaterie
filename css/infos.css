@@ -1,0 +1,68 @@
+/* variable */
+:root {
+	--grid-gap: 20px;
+}
+/* Hero */
+#hero {
+	height: calc( 100vh - var( --navbar-height ) );
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 30px;
+	align-items: center;
+    background: url( "../img/hero/backgroundchocolat.jpg" );
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+	text-shadow: #000000, 1cm;
+}
+#hero h1 {
+	font-size: 4em;
+	line-height: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+#hero p{
+	font-size: 1.5em;
+	line-height: 2em;
+	text-align: center;
+}
+/* Main */
+body > main {
+	display: grid;
+	padding: 10px var( --global-horizontal-padding );
+	box-sizing: border-box;
+	gap: var( --grid-gap );
+}
+
+/* Titres */
+main h1 {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+/* Paragraphes */
+main p {
+	line-height: 1.15em;
+	margin-bottom: 1em;
+}
+
+
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+	
+}
+
+/* Desktop */
+@media screen and ( min-width: 601px ) {
+	body > main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+/* Ultra-Wide */
+@media screen and ( min-width: 1200px ) {
+	
+}

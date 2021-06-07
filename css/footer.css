@@ -1,0 +1,67 @@
+/* Global */
+footer {
+	display: grid;
+	row-gap: var( --footer-padding );
+	padding: 0 var( --global-horizontal-padding );
+	padding-top: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid var( --border-color );
+	background-color: #7f217c;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+/* Adresse */
+footer > section:nth-child( 1 ) {
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+footer > section:nth-child( 1 ) > p:first-child {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/* Réseaux sociaux */
+footer > section:nth-child( 2 ) {
+	display: flex;
+}
+footer > section:nth-child( 2 ) img {
+	height: 80px;
+}
+
+/* Mentions */
+footer > section:nth-child( 3 ) {
+	padding: 0 var( --footer-padding );
+	text-align: center;
+	font-style: italic;
+}
+
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+	footer > section:nth-child( 1 ) {
+		text-align: center;
+	}
+	footer > section:nth-child( 2 ) {
+		justify-content: space-between;
+	}
+}
+
+/* Desktop */
+@media screen and ( min-width: 601px ) {
+	footer {
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+
+	footer > section:nth-child( 2 ) {
+		justify-content: space-evenly;
+	}
+
+	footer > section:nth-child( 3 ) {
+		grid-column: 1 / span 2;
+	}
+}
+
+/* Ultra-Wide */
+@media screen and ( min-width: 1200px ) {
+	
+}

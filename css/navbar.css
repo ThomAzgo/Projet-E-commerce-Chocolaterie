@@ -1,0 +1,102 @@
+/* Global */
+body {
+	padding-top: var( --navbar-height );
+}
+
+header > nav {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: var( --navbar-height );
+	padding: 0 var( --global-horizontal-padding );
+	box-sizing: border-box;
+	background-color: #7f217c;
+	border-bottom: 1px solid var( --border-color );
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Logo */
+header > nav > a:first-child {
+	display: inline-block;
+	height: 100%;
+	padding: var( --navbar-padding ) 0;
+	box-sizing: border-box;
+}
+header > nav > a:first-child > img {
+	height: 100%;
+}
+
+/* Liens */
+header > nav > ul {
+	display: flex;
+	align-items: center;
+}
+header > nav > ul a {
+	position: relative;
+	color: inherit;
+	text-decoration: none;
+}
+header > nav > ul a.active {
+	text-decoration: underline;
+}
+header > nav > ul a:hover::before {
+	content: ">";
+	position: absolute;
+	left: -10px;
+	font-weight: bold;
+}
+
+
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+	/* menu burger */
+	header > nav > img { 
+		cursor: pointer;
+		padding: var( --navbar-padding ) 0;
+	}
+
+	/* Liste */
+	header > nav > ul {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		justify-content: space-between;
+		padding: var( --navbar-padding ) var( --global-horizontal-padding );
+		box-sizing: border-box;
+		background-color: #fff;
+		border-bottom: 1px solid var( --border-color );
+		transition: transform .4s ease;
+	}
+	header > nav:not( .opened ) > ul {
+		transform: translateX( 100% );
+	}
+}
+
+/* Desktop */
+@media screen and ( min-width: 601px ) {
+	/* menu burger */
+	header > nav > img { 
+		display: none;
+	}
+
+	/* Liste */
+	header > nav > ul {
+		height: 100%;
+	}
+	header > nav > ul li:not( :last-child ) {
+		margin-right: 1.5em;
+	}
+	header > nav > ul a {
+		padding: .3em 0;
+	}
+}
+
+/* Ultra-Wide */
+@media screen and ( min-width: 1200px ) {
+	
+}

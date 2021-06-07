@@ -1,0 +1,50 @@
+{
+
+    "chocolatnoir":{
+        "id" : 1,
+        "nom" : "Chocolat noir",
+        "description" : "Tablette de 150mg et 9 carreaux",
+        "img_src" : "img/produits/chocolat-noir.jpg",
+        "prix" : "1.90 €"
+    },
+
+    "chocolatlait":{
+        "id" : 2,
+        "nom" : "Chocolat au lait",
+        "description" : "Tablette de 150mg et 9 carreaux",
+        "img_src" : "img/produits/chocolat-lait.jpg",
+        "prix" : "2.30 €"
+    },
+
+    "chocolatnoisette":{
+        "id" : 4,
+        "nom" : "Chocolat aux noisettes",
+        "description" : "Tablette de 150mg et 9 carreaux",
+        "img_src" : "img/produits/chocolat-noisette.jpg",
+        "prix" : "1.90 €"
+    },
+
+    "chocolatblanc":{
+        "id" : 4,
+        "nom" : "Chocolat blanc",
+        "description" : "Tablette de 150mg et 9 carreaux",
+        "img_src" : "img/produits/chocolat-blanc.jpg",
+        "prix" : "2.50 €"
+    },
+
+    "poudrechocolat":{
+        "id" : 5,
+        "nom" : "Poudre de chocolat",
+        "description" : "Pot contenant 240mg de poudre",
+        "img_src" : "img/produits/chocolat-poudre.jpg",
+        "prix" : "9.20 €"
+    },
+
+    "chocolatpepites":{
+        "id" : 6,
+        "nom" : "Pépites de chocolat",
+        "description" : "- mmmh! Ces pépites de chocolats!",
+        "img_src" : "img/produits/chocolat-pepites.jpg",
+        "prix" : "7.60 €"
+    }
+}
